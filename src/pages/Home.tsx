@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StyledContainer, StyledMain} from "../StyledComponents";
+import { StyledContainer, StyledMain, MainContent } from "../StyledComponents";
 
 import Header from "../components/Header";
 import Nav from "../components/Nav";
@@ -44,6 +44,7 @@ export function Home() {
         <StyledContainer>
         <Nav />
         <StyledMain>
+        <MainContent>
         <MainTitle>Home</MainTitle>
         <MainSection>
             <MainImageContainer>
@@ -59,6 +60,7 @@ export function Home() {
         <p>
             Welcome to my website. Feel free to navigate to the different webpages and learn a little more about me!
         </p>
+        </MainContent>
         </StyledMain>
         </StyledContainer>
         <Footer />

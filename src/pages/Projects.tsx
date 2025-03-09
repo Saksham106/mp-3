@@ -1,4 +1,4 @@
-import { StyledContainer, StyledMain, StyledH3, StyledP, StyledUl, StyledLi} from "../StyledComponents";
+import { StyledContainer, StyledMain, StyledH3, StyledP, StyledUl, StyledLi, MainContent } from "../StyledComponents";
 
 import Header from "../components/Header";
 import Nav from "../components/Nav";
@@ -15,6 +15,7 @@ export function Projects() {
         <StyledContainer>
         <Nav />
         <StyledMain>
+        <MainContent>
         <StyledH3>All In </StyledH3>
                 <StyledP>
                     <em><strong>Founder & Full Stack Developer</strong>| Boston | June 2024 - Present</em>
@@ -39,7 +40,7 @@ export function Projects() {
 
                 <Calculator />
 
-
+                </MainContent>
         </StyledMain>
         </StyledContainer>
         <Footer />

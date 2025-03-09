@@ -1,36 +1,40 @@
 import styled from "styled-components"
 
 export const StyledContainer = styled.div`
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-
-    @media screen and (max-width: 750px) { 
-        flex-direction: column;
-    }
-
-    
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #d2691e;
+  
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledMain = styled.main`
-    padding: 20px;
-    background-color:rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    font-size: calc(2px + 1vw);
-    min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  font-size: calc(2px + 1vw);
+  flex-grow: 1;
+  
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
+`;
 
-    @media screen and (max-width: 750px) { 
-            width: 100%;
-        }
-    
-
+export const MainContent = styled.div`
+  padding: 2vw;
+  width: 100%;
+  box-sizing: border-box;
 `;
 
 export const StyledH3 = styled.h3`
-    margin: 20px
+    margin: 2vw
+    align-items: left;
 `;
 
 export const StyledP = styled.p`

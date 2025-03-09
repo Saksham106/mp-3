@@ -1,4 +1,4 @@
-import { StyledContainer, StyledMain, StyledH3, StyledUl, StyledLi } from "../StyledComponents";
+import { StyledContainer, StyledMain, MainContent, StyledH3, StyledUl, StyledLi } from "../StyledComponents";
 import styled from "styled-components";
 
 import Header from "../components/Header";
@@ -15,7 +15,7 @@ const ContactImage = styled.img`
 
   @media (max-width: 750px) {
     width: 100%;
-    max-width: 300px;
+    max-width: 100px;
     margin: 0 auto;
   }
 `;
@@ -35,6 +35,7 @@ export function Contact() {
         <StyledContainer>
             <Nav />
             <StyledMain>
+              <MainContent>
                 <StyledH3>Reach Me Here!</StyledH3>
                 <ContactContainer>
                 <ContactImage src="/imgs/contact.jpeg" alt="contact" />
@@ -44,6 +45,7 @@ export function Contact() {
                     <StyledLi><strong>Phone:</strong> +1 (617) 595-0000</StyledLi>
                     <StyledLi><strong>LinkedIn:</strong> linkedin.com/in/saksham-g</StyledLi>
                 </StyledUl>
+                </MainContent>
             </StyledMain>
         </StyledContainer>
         <Footer />

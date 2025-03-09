@@ -2,70 +2,79 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Navigation = styled.nav`
-  display: flex;
-  width: 30%;
   background: #d2691e;
-  padding: 1% 0;
+  width: 30%;
+  padding: 0;
   
   @media screen and (max-width: 750px) {
-        width: 100%;
-    } 
+    width: 100%;
+  }
 `;
 
 const NavList = styled.ul`
   display: flex;
-  flex-direction: column;
   list-style: none;
   margin: 0;
-  padding: 6%;
-  gap: 2vw;
-  width: 100%;
-
+  padding: 0;
+  box-sizing: border-box;
+  
+  @media (min-width: 751px) {
+    flex-direction: column;
+    gap: 4vh;
+    padding: 2vw;
+    width: 100%;
+  }
+  
   @media (max-width: 750px) {
     flex-direction: row;
-    padding: 2%;
-    width: 100%; 
+    justify-content: space-between;
     gap: 1%;
+    padding: 3% 3%;
+    width: calc(100% - 20px);
+    flex-wrap: wrap;
   }
 `;
 
 const NavItem = styled.li`
-  background-color: #ffffff;
-  border-radius: 1vw;
-
-  &:hover {
-    background-color: #ffb74d;
-  }
-
-  @media (max-width: 750px) {
-    display: flex;
+  box-sizing: border-box;
+  
+  @media (min-width: 751px) {
     width: 100%;
+  }
+  
+  @media (max-width: 750px) {
+    flex: 1;
+    min-width: calc(15% - 6px);
+    max-width: calc(15% - 6px);
   }
 `;
 
 const NavLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   text-align: center;
   text-decoration: none;
   background: #ffcc80;
   color: #3d2b1f;
-  padding: 1rem;
   font-weight: bold;
-  border-radius: 1vw;
-  width: 90%;
-
+  border-radius: 1.5vw;
+  box-sizing: border-box;
+  width: 100%;
+  
   &:hover {
     background: #ffb74d;
   }
-
+  
+  @media (min-width: 751px) {
+    padding: 10%;
+    font-size: 1.2rem;
+  }
+  
   @media (max-width: 750px) {
-    font-size: calc(0.8rem + 1vw); 
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    padding: 2vh 5%;
+    font-size: 2vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 `;
 

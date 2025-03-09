@@ -1,4 +1,4 @@
-import { StyledContainer, StyledMain, StyledH3, StyledP, StyledUl, StyledLi } from "../StyledComponents";
+import { StyledContainer, StyledMain, StyledH3, StyledP, StyledUl, StyledLi, MainContent } from "../StyledComponents";
 
 import Header from "../components/Header";
 import Nav from "../components/Nav";
@@ -15,6 +15,7 @@ export function Experience() {
         <StyledContainer>
         <Nav />
         <StyledMain>
+        <MainContent>
         <StyledH3>Achillea Peer Tutoring</StyledH3>
         <StyledP>
                     <em><strong>Database Management Intern </strong>| Remote - New York City | June 2023 - September 2023</em>
@@ -39,6 +40,7 @@ export function Experience() {
                             customers using Python libraries for data analysis to enhance the model's accuracy and predictive capabilities.</StyledLi>
                     </StyledUl>
                 </StyledP>
+                </MainContent>
         </StyledMain>
         </StyledContainer>
         <Footer />

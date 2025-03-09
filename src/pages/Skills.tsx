@@ -1,4 +1,4 @@
-import { StyledContainer, StyledMain, StyledH3 } from "../StyledComponents";
+import { StyledContainer, StyledMain, StyledH3, MainContent } from "../StyledComponents";
 import styled from "styled-components";
 
 import Header from "../components/Header";
@@ -35,6 +35,7 @@ export function Skills() {
         <StyledContainer>
             <Nav />
             <StyledMain>
+              <MainContent>
                 <StyledH3>Here's What I Am Good At!</StyledH3>
                 
                 <ul>
@@ -47,6 +48,7 @@ export function Skills() {
                 <SkillsContainer>
                 <SkillsImage src="/imgs/skills.jpeg" alt="Skills" />
             </SkillsContainer>
+            </MainContent>
             </StyledMain>
         </StyledContainer>
         <Footer />
